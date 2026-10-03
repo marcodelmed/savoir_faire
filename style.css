@@ -137,6 +137,15 @@ li{
     margin:50px;
 }
 
+.lien-3{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight:600;
+    margin:50px;
+}
 
 .logo{
     text-align:center;
@@ -182,6 +191,11 @@ ul {
 .lien-2:hover{
     color:pink;
     font-size: 1.3em;
+}
+
+.lien-3:hover{
+    color:pink;
+    font-size: 1.15em;
 }
 
 
