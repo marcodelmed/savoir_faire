@@ -1,0 +1,155 @@
+* {
+    margin : 0;
+}
+
+body{
+    background:linear-gradient(#610061,#800080);
+}
+
+
+p{
+    color:white;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2em;
+    margin:50px;
+    width: 50%;
+    padding: 50px;
+    border-radius: 2%;
+}
+
+.p2{
+    color:white;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-right:50px;
+    border-radius: 2%;
+}
+
+h1{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3.5em;
+    margin-bottom:50px;
+}
+
+h2{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.5em;
+    margin:50px;
+}
+
+li{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1em;
+    margin:50px;
+}
+
+.texte-1{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:600;
+    margin:50px;
+}
+
+.texte-2{
+    color:red;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:400;
+}
+
+
+.lien-1{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 2em;
+    margin:50px;
+}
+
+
+.lien-2{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight:600;
+    margin:50px;
+}
+
+
+.logo{
+    text-align:center;
+}
+
+.exotic{
+    background-image: url(images/exotic.jpg);
+    padding:1em;
+    background-attachment: fixed;
+}
+
+.exotic-2{
+    background-image: url(images/exotic.jpg);
+    padding:1em;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.reseau{
+    width: 1.5%;
+}
+
+.content-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.reseau:hover{
+    width: 1.7%;
+}
+
+.lien-1:hover{
+    color:pink;
+    text-decoration: none;
+    font-size: 2.05em;
+}
+
+.lien-2:hover{
+    color:pink;
+    font-size: 1.3em;
+}
+
+
+a:hover{
+    color:pink;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+}
