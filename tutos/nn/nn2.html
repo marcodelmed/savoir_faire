@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>site web des mondes</title>
+        <link rel="stylesheet" href="../../style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- 1. CSS de KaTeX -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+        <link rel="icon" type="image/png" href="../../images/logo.png">
+        <!-- 2. JS de KaTeX et extension de rendu automatique -->
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, {
+            delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
+            ]
+        });"></script>
+    </head>
+    
+    <header>
+            <h1 class="exotic"><a class="lien-1" href="../../index.html"> Haut voltâge  </a> </h1>
+    </header>
+
+    <nav>
+        <a class="lien-1" href="../../index.html"> Antichambre </a> 
+        <a class="lien-1" href="../../academia/academia.html"> Academia </a>
+        <a class="lien-1" href="../../tutos/tuto.html"> Capsules </a>
+    </nav>
+
+    <h2>Comment fonctionnent les réseaux de neurones profonds ?</h2>
+    <h3>2. Rajouter la non-linéarité </h3>
+    <p class="p_article"> 
+        Malheureusement, la nature n'est pas uniquement linéaire, et ce modèle a des limites. On ne peut pas toujours se contenter d'ajouter et de multiplier des coefficients pour avoir le bon résultat. 
+        Il faut faire appel à ce qu'on appelle <b>la non-linéarité</b>, c'est-à-dire des opérations qui plus complexes que l'addition et la multiplication. Cela permettra au modèle d'apprendre des patterns 
+        de prédiction plus compliqué. C'est ici que naissent les réseaux de neurones. 
+    </p>
+    <h4>
+        Les réseaux de neurones
+    </h4>
+    <p class="p_article">
+        Comme on peut l'intuiter par le nom, le réseau de neurones est composé de briques élémentaires appelées <b> neurones </b>.
+        Ce modèle est un modèle relativement simple par rapport à la complexité du neurone humain. 
+        On l'a dit précédemment, l'objectif est d'ajouter de la non-linéarité, alors, les neurones sont simplement des modèles linéaires auxquels on rajoute une composante non linéaire, appelée <b>fonction d'activation</b>. 
+         <img src="../../images/neurone.png" alt="neurone" width="800" height="400" style="display: block; margin: 50px auto;"> 
+         Ils prennent en entrée plusieurs informations différentes, qu'ils pondèrent avec des coefficients, appelés cette fois-ci des <b>poids</b>, puis les ajoutent comme notre modèle linéaire. Cette fonction d'activation permet de créer de la non-linéarité, on pourrait aussi dire de la complexité. <br>
+        En reliant les neurones entre eux, on crée en cascade des alternances linéarité/non-linéarité qui permettent de manière extrêmement remarquable d'apprendre la structure des données d'apprentissage. Plus simplement, ces modèles permettent d'apprendre des informations beaucoup plus compliquées 
+        qu'une simple addition de facteurs comme on l'a vu avec notre modèle météo linéaire. 
+        <img src="../../images/nn.png" alt="nn" width="800" height="400" style="display: block; margin: 50px auto;"> 
+        On appelle cela alors un réseau de neurones, ils sont séparés en <b>couches cachées</b> qui correspondent à un groupe de neurones qui partagent la même entrée et dont la sortie sera envoyée à la prochaine couche de neurones. 
+    </p>
+    <h4>
+        Pourquoi la non-linéarité
+    </h4>
+    <p class="p_article">
+        On l'a vu, la non-linéarité est essentielle. Mais illustrons ça un peu plus en détail. 
+        Voici deux ensembles de données différents, que l'on aimerait utiliser pour prédire des phénomènes. 
+        <img src="../../images/linéaire.jpg" alt="lin_vs_nl" width="800" height="400" style="display: block; margin: 50px auto;">
+        Imaginons que l'on cherche à savoir si un nouveau point appartienne aux points verts ou rouges. Le modèle linéaire ne sera pas capable d'apprendre autre chose qu'une séparation claire via une droite des deux ensembles. Le deuxième problème n'est pas résolvable avec un modèle linéaire.
+        Les réseaux de neurones vont déformer cette frontière, chercher une relation plus complexe qu'une simple droite. Ici par exemple, un réseau de neurones sera capable d'apprendre la circularité de la frontière, soit, une non-linéarité.  
+    </p>
+    
