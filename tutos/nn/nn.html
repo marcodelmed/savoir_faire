@@ -22,9 +22,9 @@
             ]
         });"></script>
     </head>
-    
+    <body>
     <header>
-            <h1 class="exotic"><a class="lien-1" href="../../index.html"> Haut voltâge  </a> </h1>
+            <h1 class="exotic"><a class="lien-titre" href="../../index.html"> Haut voltâge  </a> </h1>
     </header>
 
     <nav>
@@ -32,7 +32,7 @@
         <a class="lien-1" href="../../academia/academia.html"> Academia </a>
         <a class="lien-1" href="../../tutos/tuto.html"> Capsules </a>
     </nav>
-
+    <div class="container">
     <h2>Comment fonctionnent les réseaux de neurones profonds ?</h2>
     <h3>1. Le modèle linéaire</h3>
     <h4>Apprendre à partir de données, ou comment est-ce que tout ça a commencé</h4>
@@ -41,9 +41,10 @@
         Historiquement, les modèles d'apprentissage automatique ont commencé avec des méthodes linéaires, c'est à dire de chercher des combinaisons de paramètres afin de trouver un modèle de prédiction linéaire.  <br>
         On veut par exemple chercher à modéliser la météo, on dispose d'un certain nombres de capteurs permettant d'avoir plusieurs informations différentes, le vent, l'humidité, l'altitude, les UVs etc... On laisse les capteurs enregistrés suffisamment pour que la machine puisse apprendre des patterns, c'est-à-dire il faut enregistrer des informations pendant des jours pluvieux, des jours ensoleillés, sur différentes saisons, et donc collecter une grosse dose d'informations pour entraîner notre modèle.
         Si on mélange toutes ces informations, le modèle va apprendre comment avec les bons coefficients, on peut obtenir une prédiction de la température. <br>
-        On rajoute enfin un biais, cela permet que si tout vaille 0 on n'ait pas une température de 0.
-        $$ Température = \alpha_{1} * Humidité + \alpha_{2}  * Vitesse\_vent + \alpha_{3}  * UVs + \alpha_{4}  * altitude + biais $$
-        Le principe est alors simple, apprendre à mélanger des informations en ayant des connaissances préalables sur le phénomène pour prédire une donnée nouvelle. Le modèle linéaire a pour propriété d'additionner chacune des informations en la pondérant avec un coefficient pour retourner cette donnée nouvelle. 
+        On rajoute enfin un biais, cela permet que si tout vaille 0 on n'ait pas une température de 0.<div class="defiler"><span class="aide"> (faire défiler)</span>
+        $$ Température = \alpha_{1} * Humidité +  \alpha_{2}  * Vitesse\_vent + \alpha_{3}  * UVs + \alpha_{4}  * altitude + biais $$</div>
+        <p class="p_article">
+        Le principe est alors simple, apprendre à mélanger des informations en ayant des connaissances préalables sur le phénomène pour prédire une donnée nouvelle. Le modèle linéaire a pour propriété d'additionner chacune des informations en la pondérant avec un coefficient pour retourner cette donnée nouvelle.
     </p>
     <h4>Comment ça fonctionne alors ?</h4>
     <p class="p_article">
@@ -66,7 +67,7 @@
         Une fois qu'on a cette fonction de perte, il a fallu utiliser un autre algorithme, un nouvel ingrédient,<b> la descente de gradient </b>. Cet algorithme permet l'optimisation de la fonction de perte, c'est-à-dire, chercher les coefficients qui la minimisent. 
         Pour rappel, l'objectif est d'avoir une fonction de perte la plus petite possible car elle mesure à quel point le modèle prédit des informations éloignées des données. Plus elle est faible, mieux c'est. Alors son minimum, c'est le graal, la descente de gradient s'aventure alors en quelque sorte dans la vaste étendue de coefficients possibles 
         pour chercher lesquels sont les meilleurs. Le terme gradient ramène ici à une idée de dérivée de la fonction, le gradient permet de connaître les tendances d'évolution de la fonction. Il pointe vers la direction qui montre la plus grande augmentation. Alors on regarde dans le sens inverse, et on trouve la bonne direction. <br>
-        <img src="../../images/gradientDescent.jpg" alt="descente_gradient" width="500" height="400" style="display: block; margin: 50px auto;">
+        <img src="../../images/gradientDescent.jpg" alt="descente_gradient" width="100%" height="100%" style="display: block; margin: 50px auto;">
         Cette illustration montre une procédure type de descente de gradient. Dans l'espace des paramètres, c'est-à-dire parmi toutes les valeurs possibles que peuvent prendre les coefficients de notre modèle linéaire, il y a un point correspondant à la valeur minimum de la fonction de perte. Ce point permet d'avoir les meilleurs coefficients, 
         les gradients vont alors pointer vers la direction de ce point, en cherchant la décroissance de la fonction de perte. <br>
         Il existe une multitude de <a href="https://fr.wikipedia.org/wiki/Algorithme_du_gradient">techniques</a> permettant d'avoir des descentes de gradients adaptées au problème en cherchant le minimum de la fonction de perte de manière intelligente.  
@@ -76,5 +77,6 @@
         C'est ce qu'on appelle <b>l'overfitting</b>, ou <b>surapprentissage</b>. En prenant notre exemple, on veut le modèle soit capable de prédire des situations nouvelles qu'il n'a jamais rencontrées.   
     </p>
 
-    <h3><a class="lien-3" href="nn2.html"> Cliquez pour la suite : 2. Rajouter la non-linéarité </a> </h3>
-
+    <h3><a class="lien-3" href="nn2.html"> Cliquez pour la suite : 2. Rajouter la non-linéarité </a> </h3></div>
+</body>
+</html>
