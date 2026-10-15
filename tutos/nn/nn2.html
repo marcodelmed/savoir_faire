@@ -24,7 +24,7 @@
     </head>
     
     <header>
-            <h1 class="exotic"><a class="lien-1" href="../../index.html"> Haut voltâge  </a> </h1>
+            <h1 class="exotic"><a class="lien-titre" href="../../index.html"> Haut voltâge  </a> </h1>
     </header>
 
     <nav>
@@ -47,11 +47,11 @@
         Comme on peut l'intuiter par le nom, le réseau de neurones est composé de briques élémentaires appelées <b> neurones </b>.
         Ce modèle est un modèle relativement simple par rapport à la complexité du neurone humain. 
         On l'a dit précédemment, l'objectif est d'ajouter de la non-linéarité, alors, les neurones sont simplement des modèles linéaires auxquels on rajoute une composante non linéaire, appelée <b>fonction d'activation</b>. 
-         <img src="../../images/neurone.png" alt="neurone" width="800" height="400" style="display: block; margin: 50px auto;"> 
+         <img src="../../images/neurone.png" alt="neurone" width="100%" height="100%" style="display: block; margin: 50px auto;"> 
          Ils prennent en entrée plusieurs informations différentes, qu'ils pondèrent avec des coefficients, appelés cette fois-ci des <b>poids</b>, puis les ajoutent comme notre modèle linéaire. Cette fonction d'activation permet de créer de la non-linéarité, on pourrait aussi dire de la complexité. <br>
         En reliant les neurones entre eux, on crée en cascade des alternances linéarité/non-linéarité qui permettent de manière extrêmement remarquable d'apprendre la structure des données d'apprentissage. Plus simplement, ces modèles permettent d'apprendre des informations beaucoup plus compliquées 
         qu'une simple addition de facteurs comme on l'a vu avec notre modèle météo linéaire. 
-        <img src="../../images/nn.png" alt="nn" width="800" height="400" style="display: block; margin: 50px auto;"> 
+        <img src="../../images/nn.png" alt="nn" width="100%" height="100%" style="display: block; margin: 50px auto;"> 
         On appelle cela alors un réseau de neurones, ils sont séparés en <b>couches cachées</b> qui correspondent à un groupe de neurones qui partagent la même entrée et dont la sortie sera envoyée à la prochaine couche de neurones. 
     </p>
     <h4>
@@ -60,7 +60,7 @@
     <p class="p_article">
         On l'a vu, la non-linéarité est essentielle. Mais illustrons ça un peu plus en détail. 
         Voici deux ensembles de données différents, que l'on aimerait utiliser pour prédire des phénomènes. 
-        <img src="../../images/linéaire.jpg" alt="lin_vs_nl" width="800" height="400" style="display: block; margin: 50px auto;">
+        <img src="../../images/linéaire.jpg" alt="lin_vs_nl" width="100%" height="100%" style="display: block; margin: 50px auto;">
         Imaginons que l'on cherche à savoir si un nouveau point appartienne aux points verts ou rouges. Le modèle linéaire ne sera pas capable d'apprendre autre chose qu'une séparation claire via une droite des deux ensembles. Le deuxième problème n'est pas résolvable avec un modèle linéaire.
         Les réseaux de neurones vont déformer cette frontière, chercher une relation plus complexe qu'une simple droite. Ici par exemple, un réseau de neurones sera capable d'apprendre la circularité de la frontière, soit, une non-linéarité.  
     </p>
